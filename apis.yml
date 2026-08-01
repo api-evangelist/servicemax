@@ -1,9 +1,29 @@
 aid: servicemax
 name: ServiceMax
-description: 'ServiceMax is a company surfaced as a portfolio company of emergence-capital, trinity-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: enterprise-software. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'ServiceMax is asset-centric field service management (FSM) software that
+  helps equipment manufacturers and service organizations maximize equipment uptime,
+  optimize technician productivity, and streamline service delivery. Its cloud platform,
+  built natively on the Salesforce platform (ServiceMax Core and Asset 360), spans work
+  order and workflow management, scheduling and dispatch (Service Board), preventive and
+  predictive maintenance, contract and entitlement management, parts and inventory,
+  offline-capable mobile tools (ServiceMax Go), real-time technician collaboration (Zinc),
+  and customer self-service (Engage). Founded in 2007 and acquired by PTC in 2023,
+  ServiceMax integrates with PTC''s IoT and PLM portfolio (ThingWorx, Windchill) and
+  exposes its data and workflows through the underlying Salesforce API surface rather
+  than a standalone public developer API.'
 url: https://raw.githubusercontent.com/api-evangelist/servicemax/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://ptc-p-001.sitecorecontenthub.cloud/api/public/content/3e1780ab87ea4df98c59075789e76e83?v=ac279162
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,10 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Enterprise Software
+- Field Service Management
+- Asset Management
+- Salesforce
+- Maintenance
+- Service Management
+- Mobile Workforce
+- IoT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.servicemax.com
+- type: ProductPage
+  url: https://www.ptc.com/en/products/servicemax
+- type: Support
+  url: https://community.servicemax.com/s/
+- type: TermsOfService
+  url: https://www.ptc.com/en/documents/legal-agreements
+- type: PrivacyPolicy
+  url: https://www.ptc.com/en/documents/legal-agreements
+- type: TrustCenter
+  url: https://www.ptc.com/en/about/trust-center/
+- type: Security
+  url: https://www.ptc.com/en/about/trust-center/
+- type: WellKnown
+  url: well-known/servicemax-well-known.yml
+- type: DomainSecurity
+  url: security/servicemax-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/servicemax-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

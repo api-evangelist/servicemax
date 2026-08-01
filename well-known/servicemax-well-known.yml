@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of ServiceMax hosts
+host: https://community.servicemax.com
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: servicemax-openid-configuration.json
+  note: Salesforce Experience Cloud OIDC discovery for the ServiceMax customer community
+- path: /.well-known/oauth-authorization-server
+  status: 401
+- path: /.well-known/api-catalog
+  status: 401
+- path: /.well-known/ai-plugin.json
+  status: 401
+- path: /.well-known/security.txt
+  status: 401
+other_hosts:
+- host: https://www.servicemax.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: soft-200 returns HTML (PTC marketing page), not an RFC 9116 security.txt; not saved
