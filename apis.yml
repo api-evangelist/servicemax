@@ -1,16 +1,14 @@
 aid: servicemax
 name: ServiceMax
-description: 'ServiceMax is asset-centric field service management (FSM) software that
-  helps equipment manufacturers and service organizations maximize equipment uptime,
-  optimize technician productivity, and streamline service delivery. Its cloud platform,
-  built natively on the Salesforce platform (ServiceMax Core and Asset 360), spans work
-  order and workflow management, scheduling and dispatch (Service Board), preventive and
-  predictive maintenance, contract and entitlement management, parts and inventory,
-  offline-capable mobile tools (ServiceMax Go), real-time technician collaboration (Zinc),
-  and customer self-service (Engage). Founded in 2007 and acquired by PTC in 2023,
-  ServiceMax integrates with PTC''s IoT and PLM portfolio (ThingWorx, Windchill) and
-  exposes its data and workflows through the underlying Salesforce API surface rather
-  than a standalone public developer API.'
+description: ServiceMax is asset-centric field service management (FSM) software that helps equipment
+  manufacturers and service organizations maximize equipment uptime, optimize technician productivity,
+  and streamline service delivery. Its cloud platform, built natively on the Salesforce platform (ServiceMax
+  Core and Asset 360), spans work order and workflow management, scheduling and dispatch (Service Board),
+  preventive and predictive maintenance, contract and entitlement management, parts and inventory, offline-capable
+  mobile tools (ServiceMax Go), real-time technician collaboration (Zinc), and customer self-service (Engage).
+  Founded in 2007 and acquired by PTC in 2023, ServiceMax integrates with PTC's IoT and PLM portfolio
+  (ThingWorx, Windchill) and exposes its data and workflows through the underlying Salesforce API surface
+  rather than a standalone public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/servicemax/refs/heads/main/apis.yml
 accessModel:
   pricing: unknown
@@ -33,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-08'
 tags:
 - Company
 - Enterprise Software
@@ -71,8 +69,12 @@ common:
   url: security/servicemax-domain-security.yml
 - type: VulnerabilityDisclosure
   url: security/servicemax-vulnerability-disclosure.yml
+- type: Documentation
+  url: https://www.ptc.com/en/products/servicemax
 x-enrichment:
   date: '2026-07-21'
   status: enriched
   artifacts_added: 4
   pass: local-v1
+x-merged-from:
+- service-max
