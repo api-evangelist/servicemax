@@ -10,6 +10,17 @@ description: ServiceMax is asset-centric field service management (FSM) software
   (ThingWorx, Windchill) and exposes its data and workflows through the underlying Salesforce API surface
   rather than a standalone public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/servicemax/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
