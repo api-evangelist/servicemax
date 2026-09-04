@@ -32,6 +32,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.servicemax.com', status: 301, note: 'declared website redirects to https://www.ptc.com/en/products/servicemax — a different registrable domain (servicemax.com -> ptc.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://ptc-p-001.sitecorecontenthub.cloud/api/public/content/3e1780ab87ea4df98c59075789e76e83?v=ac279162
 x-type: company
 x-source: vc-portfolio
