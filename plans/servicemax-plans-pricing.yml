@@ -1,0 +1,12 @@
+name: ServiceMax pricing
+generated: '2026-10-20'
+method: none
+source: https://www.ptc.com/en/products/servicemax
+audience: business-product
+pricing_basis: negotiated
+published: false
+delivery:
+  model: managed
+plan_count: 0
+plans: []
+note: The ServiceMax product page on ptc.com publishes no price or plan tiers; it links only to /en/contact-us and a product-demo page (checked 2026-10-20).

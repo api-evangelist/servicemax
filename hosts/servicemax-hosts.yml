@@ -1,0 +1,206 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 17
+  own: 4
+  other_domain: 11
+  platform: 2
+  roles:
+  - api
+  - docs
+  - other
+  - support
+  - website
+hosts:
+- host: api.apis.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: apis.io
+  role: api
+  relation: other-domain
+- host: api.ptc.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ptc.com
+  role: api
+  relation: other-domain
+- host: api.servicemax.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: servicemax.com
+  role: api
+  relation: own
+- host: apicommons.org
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: apicommons.org
+  role: other
+  relation: other-domain
+- host: apis.apis.io
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: APIs | APIs.io
+  status: 200
+  registrable_domain: apis.io
+  role: api
+  relation: other-domain
+- host: apis.io
+  found_by:
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: apis.io
+  role: api
+  relation: other-domain
+- host: apisjson.org
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: apisjson.org
+  role: other
+  relation: other-domain
+- host: community.servicemax.com
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: servicemax.com
+  role: support
+  relation: own
+- host: developer.apis.io
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: APIs.io Developers — API, MCP &amp; Skills
+  status: 200
+  registrable_domain: apis.io
+  role: api
+  relation: other-domain
+- host: examples.apis.io
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: apis.io
+  role: api
+  relation: other-domain
+- host: github.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: github.com
+  role: other
+  relation: platform
+- host: help.servicemax.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: servicemax.com
+  role: support
+  relation: own
+- host: raw.githubusercontent.com
+  found_by:
+  - docs-index
+  - spec-found
+  types: []
+  serves:
+  - docs
+  - spec
+  registrable_domain: githubusercontent.com
+  role: other
+  relation: platform
+- host: servicemax.litmos.com
+  found_by:
+  - pointer
+  types:
+  - Training
+  serves: []
+  registrable_domain: litmos.com
+  role: other
+  relation: other-domain
+- host: support.ptc.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ptc.com
+  role: support
+  relation: other-domain
+- host: www.ptc.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Newsroom
+  - ParentCompany
+  - ProductPage
+  - TermsOfService
+  - PrivacyPolicy
+  - TrustCenter
+  - Security
+  - Documentation
+  - ChangeLog
+  serves:
+  - docs
+  - cdn
+  vendor: akamai
+  registrable_domain: ptc.com
+  role: docs
+  relation: other-domain
+- host: www.servicemax.com
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: servicemax.com
+  role: website
+  relation: own

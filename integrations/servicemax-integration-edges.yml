@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/servicemax/integrations
+- https://n8n.io/integrations/servicemax/
+- https://composio.dev/toolkits/servicemax
+- https://monid.ai/tools/servicemax
+checked:
+- https://composio.dev/toolkits/servicemax
+- https://monid.ai/tools/servicemax
+- https://n8n.io/integrations/servicemax/
+- https://zapier.com/apps/servicemax/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

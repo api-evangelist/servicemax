@@ -29,22 +29,24 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://www.servicemax.com
+    status: 301
+    note: declared website redirects to https://www.ptc.com/en/products/servicemax — a different registrable
+      domain (servicemax.com -> ptc.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://www.servicemax.com', status: 301, note: 'declared website redirects to https://www.ptc.com/en/products/servicemax — a different registrable domain (servicemax.com -> ptc.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://ptc-p-001.sitecorecontenthub.cloud/api/public/content/3e1780ab87ea4df98c59075789e76e83?v=ac279162
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - emergence-capital
 - trinity-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (local-v5; was portfolio-lead)
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-08'
+modified: '2026-10-20'
 tags:
 - Company
 - Enterprise Software
@@ -65,18 +67,35 @@ tags_raw:
 - Service Management
 - Mobile Workforce
 - IoT
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgentCard
+  url: a2a/servicemax-a2a.yml
+- type: Login
+  url: https://apis.io/api/v1/auth/login
+- type: GettingStarted
+  url: https://apis.io/onboarding/
+- type: APIReference
+  url: https://apis.io/llms.txt
+- type: TrustCenter
+  url: security/servicemax-trust-center.yml
+- type: Hosts
+  url: hosts/servicemax-hosts.yml
+- type: Vendors
+  url: vendors/servicemax-vendors.yml
+- type: Newsroom
+  url: https://www.ptc.com/en/news
 - type: ParentCompany
-  url: https://apis.io/providers/ptc/
+  url: https://www.ptc.com
   name: PTC
   x-relationship: acquired
-  x-evidence: "Founded in 2007 and acquired by PTC in 2023, ServiceMax integrates with PTC's IoT and PLM portfolio (ThingWorx, Windchill) and exposes its data and workflows through the underlying Salesforce API surface rather than a standalone public deve"
+  x-evidence: Founded in 2007 and acquired by PTC in 2023, ServiceMax integrates with PTC's IoT and PLM
+    portfolio (ThingWorx, Windchill) and exposes its data and workflows through the underlying Salesforce
+    API surface rather than a standalone public deve
 - type: Website
   url: https://www.servicemax.com
 - type: ProductPage
@@ -86,7 +105,7 @@ common:
 - type: TermsOfService
   url: https://www.ptc.com/en/documents/legal-agreements
 - type: PrivacyPolicy
-  url: https://www.ptc.com/en/documents/legal-agreements
+  url: https://www.ptc.com/en/documents/policies/privacy
 - type: TrustCenter
   url: https://www.ptc.com/en/about/trust-center/
 - type: Security
@@ -98,11 +117,33 @@ common:
 - type: VulnerabilityDisclosure
   url: security/servicemax-vulnerability-disclosure.yml
 - type: Documentation
-  url: https://www.ptc.com/en/products/servicemax
+  url: https://www.ptc.com/en/support/help/Servicemax
+- type: ChangeLog
+  url: https://www.ptc.com/en/products/servicemax/whats-new
+- type: Training
+  url: https://servicemax.litmos.com/home
+apis: []
 x-enrichment:
-  date: '2026-07-21'
-  status: enriched
+  date: '2026-10-20'
+  status: minimal
   artifacts_added: 4
-  pass: local-v1
+  pass: local-v5
 x-merged-from:
 - service-max
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: 'ServiceMax ships as a Salesforce managed package with no standalone API: api.servicemax.com
+    and developer.servicemax.com do not resolve, the GitHub org has no public repos, and the only programmatic
+    reference is the HTML Asset 360 Apex class list on help.servicemaxasset360.com, with no OpenAPI, WSDL
+    or other contract.'
+  evidence:
+  - url: https://www.ptc.com/en/support/help/Servicemax
+    status: 200
+  - url: https://help.servicemaxasset360.com/articles/asset-360/asset-360-apex-classes.html
+    status: 200
+  - url: https://api.github.com/orgs/ServiceMax/repos
+    status: 200
+  - url: https://help.servicemax.com/llms.txt
+    status: 403
+  checked: '2026-10-20'
